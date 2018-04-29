@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Main";
+    ViewBag.ProjectName = "SCBuggyBits";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*This will go under Render Body*@
+@*<h2>This is Main Layout!</h2>*@
+
+@*<div class="@Model.Title.ToLower()">
+    <h1>@Editable(m => m.Title)</h1>
+    @Editable(m => m.Text)
+</div>*@    
+
+<hr />
+
+@Html.Sitecore().Placeholder("main")
+
+
+@*This will go under render scripts*@
+@section scripts
+{
+
+    @*Script Tag Coming from Main*@
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+}
+
