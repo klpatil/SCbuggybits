@@ -5,9 +5,7 @@
     using Sitecore.Data.Items;
     using Sitecore.Diagnostics;
     using Sitecore.Shell.Framework.Commands;
-
-    // TODO: \App_Config\include\CEDemoCommand.config created automatically when creating CEDemoCommand class. In this config include file, specify command name attribute value
-
+    
     public class CEDemoCommand : Command
     {
         public override void Execute([NotNull] CommandContext context)
@@ -23,8 +21,8 @@
                 var currentItem = context.Items[0];
                 if (currentItem != null && currentItem.Name == "SlowDownCE")
                 {
-                    var timeSpan = System.TimeSpan.FromMinutes(1);
-                    // To Demo one minute long executing task
+                    var timeSpan = System.TimeSpan.FromSeconds(10);
+                    // To Demo long executing task
                     System.Threading.Thread.Sleep(timeSpan);
 
                 }

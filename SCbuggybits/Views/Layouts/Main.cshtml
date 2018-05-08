@@ -4,18 +4,13 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@*This will go under Render Body*@
-@*<h2>This is Main Layout!</h2>*@
-
-@*<div class="@Model.Title.ToLower()">
-    <h1>@Editable(m => m.Title)</h1>
-    @Editable(m => m.Text)
-</div>*@    
-
 <hr />
 
 @Html.Sitecore().Placeholder("main")
 
+<div>
+    @Html.Partial("_LoginForm")
+</div>
 
 @*This will go under render scripts*@
 @section scripts

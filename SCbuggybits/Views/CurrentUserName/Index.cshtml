@@ -1,0 +1,16 @@
+﻿@model SCbuggybits.Models.UserDetail
+
+
+@if (Model.IsLoggedin)
+{
+    // Show UserName
+    <li>
+        <a href="#">Welcome, @Model.UserName</a>
+    </li>
+}
+else
+{
+    // Show login
+    <li><a href="#" data-toggle="modal" data-target="#exampleModal">Login</a></li>
+
+}
