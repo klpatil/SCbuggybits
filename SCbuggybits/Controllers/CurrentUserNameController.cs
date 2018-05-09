@@ -24,6 +24,7 @@ namespace SCbuggybits.Controllers
         {
             if(!string.IsNullOrWhiteSpace(model.UserName))
             {
+                HttpContext.Session.Clear();
                 HttpContext.Session.Add(USERNAME, model.UserName);
                 return Redirect(this.Request.UrlReferrer.AbsolutePath);
             }           

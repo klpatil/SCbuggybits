@@ -1,6 +1,5 @@
 ﻿@model SCbuggybits.Models.UserDetail
 
-
 @if (Model.IsLoggedin)
 {
     // Show UserName
@@ -10,7 +9,5 @@
 }
 else
 {
-    // Show login
-    <li><a href="#" data-toggle="modal" data-target="#exampleModal">Login</a></li>
-
+    <li><a href="/Login">Login</a></li>
 }

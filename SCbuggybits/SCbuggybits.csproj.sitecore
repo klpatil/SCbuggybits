@@ -2,4 +2,7 @@
   <PropertyGroup>
     <Site Server="scbuggybits" UserName="sitecore\admin" IsRemoteSitecore="False" />
   </PropertyGroup>
+  <File Include="Views\Security\LoginForm.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{8C4CE78A-E83C-4C50-B2A4-62A52A5FC01C}</Item>
+  </File>
 </Project>
