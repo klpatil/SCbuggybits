@@ -1,0 +1,20 @@
+﻿<div>
+    <h2>Company Information</h2>
+    <p>Buggy Bits was established in 1994 as a one-man company delivering really buggy software and t-shirts noone would ever wear.</p>
+    <p>
+        Since then it has grown into a large organization with over 1754 employees and the main focus for the
+        company today is to sell worthless products at horribly high
+        prices.
+    </p>
+    <p></p>
+    @using (Html.BeginForm("SendEmail", "CompanyInformation", FormMethod.Post,
+                                                new { @class = "form-inline" }))
+    {
+
+        <div class="form-group mx-sm-3 mb-2">
+            <label for="message" class="sr-only">Send us a mesasge</label>
+            <input type="text" class="form-control" id="message" name="message" placeholder="message">
+        </div>
+        <button type="submit" class="btn btn-primary mb-2">Send</button>
+    }
+</div>

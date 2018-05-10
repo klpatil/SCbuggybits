@@ -4,13 +4,10 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<hr />
 
 @Html.Sitecore().Placeholder("main")
 
-<div>
-    @Html.Partial("_LoginForm")
-</div>
+
 
 @*This will go under render scripts*@
 @section scripts

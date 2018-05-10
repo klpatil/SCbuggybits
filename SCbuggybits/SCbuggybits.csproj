@@ -43,6 +43,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="App_Code.jzvae8vx">
+      <HintPath>..\..\..\..\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\12a8d0f0\_shadow\e50508ec\18104\App_Code.jzvae8vx.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
@@ -110,11 +113,17 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\CurrentUserName\Index.cshtml" />
     <Content Include="Views\Security\LoginForm.cshtml" />
+    <Content Include="Views\CompanyInformation\Index.cshtml" />
+    <Content Include="Views\CompanyInformation\SendEmail.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Code\BuggyMail.cs" />
+    <Compile Include="Code\ExceptionHandler.cs" />
+    <Compile Include="Code\Utility.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Commands\CEDemoCommand.cs" />
+    <Compile Include="Controllers\CompanyInformationController.cs" />
     <Compile Include="Controllers\CurrentUserNameController.cs" />
     <Compile Include="Models\UserDetail.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -1,0 +1,52 @@
+----item----
+version: 1
+id: {96925ED1-9939-48C0-9E62-8E9D5FB8E6BE}
+database: master
+path: /sitecore/content/SCbuggybits/CompanyInfo
+parent: {FEA56CF7-1CBD-410F-B3FB-84610EB35D56}
+name: CompanyInfo
+master: {00000000-0000-0000-0000-000000000000}
+template: {4B353DAC-269E-4162-910A-F23EF871C278}
+templatekey: Content Page
+created: 20180510T152037Z
+
+----field----
+field: {F1A1FE9E-A60C-4DDB-A3A0-BB5B29FE732E}
+name: __Renderings
+key: __renderings
+content-length: 217
+
+<r xmlns:p="p" xmlns:s="s" p:p="1"><p:da name="xsd" /><d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"><r uid="{EAA1EAA6-1C87-447D-BBD7-06D8DB852D12}" s:id="{0EB65B5F-CF6E-437C-AF98-DCC4E2D77E47}" s:ph="main" /></d></r>
+----version----
+language: en
+version: 1
+revision: e75e24f3-d022-46da-a4ff-949524b8fb58
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20180510T152037Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+e75e24f3-d022-46da-a4ff-949524b8fb58
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20180510T152112Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin
