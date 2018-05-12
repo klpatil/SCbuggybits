@@ -1,20 +1,95 @@
-﻿<div>
-    <h2>Company Information</h2>
-    <p>Buggy Bits was established in 1994 as a one-man company delivering really buggy software and t-shirts noone would ever wear.</p>
-    <p>
-        Since then it has grown into a large organization with over 1754 employees and the main focus for the
-        company today is to sell worthless products at horribly high
-        prices.
-    </p>
-    <p></p>
-    @using (Html.BeginForm("SendEmail", "CompanyInformation", FormMethod.Post,
-                                                new { @class = "form-inline" }))
-    {
-
-        <div class="form-group mx-sm-3 mb-2">
-            <label for="message" class="sr-only">Send us a mesasge</label>
-            <input type="text" class="form-control" id="message" name="message" placeholder="message">
+﻿<div class="jumbotron jumbotron-sm">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-12">
+                <h3 class="h3">
+                    Contact us <small>Feel free to contact us</small>
+                </h3>
+                @*<h2>Company Information</h2>*@
+                <p>Buggy Bits was established in 1994 as a one-man company delivering really buggy software and t-shirts no one would ever wear.</p>
+                <p>
+                    Since then it has grown into a large organization with over 1754 employees and the main focus for the
+                    company today is to sell worthless products at horribly high
+                    prices.
+                </p>
+            </div>
         </div>
-        <button type="submit" class="btn btn-primary mb-2">Send</button>
-    }
+    </div>
 </div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="well well-sm">
+                @using (Html.BeginForm("SendEmail", "CompanyInformation", FormMethod.Post))
+                {
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name">
+                                    Name
+                                </label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">
+                                    Email Address
+                                </label>
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <span class="glyphicon glyphicon-envelope"></span>
+                                    </span>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">
+                                    Subject
+                                </label>
+                                <select id="subject" name="subject" class="form-control" required="required">
+                                    <option value="na" selected="">Choose One:</option>
+                                    <option value="service">General Customer Service</option>
+                                    <option value="suggestions">Suggestions</option>
+                                    <option value="product">Product Support</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name">
+                                    Message
+                                </label>
+                                <textarea id="message" name="message" class="form-control" 
+                                          rows="9" cols="25" required="required"
+                                          placeholder="Message"></textarea>                                
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                                Send Message
+                            </button>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="col-md-4">
+            <form>
+                <legend><span class="glyphicon glyphicon-globe"></span> Our office</legend>
+                <address>
+                    <strong>SCBuggyBits, Inc.</strong><br>
+                    404 Bug Not Found, Suite 500<br>
+                    No BUG City, IN 94107<br>
+                    <abbr title="Phone">
+                        P:
+                    </abbr>
+                    +91-12345-67890
+                </address>
+                <address>
+                    <strong>Full Name</strong><br>
+                    <a href="mailto:#">fixmybug@scbuggybits.com</a>
+                </address>
+            </form>
+        </div>
+    </div>
+</div>
+    

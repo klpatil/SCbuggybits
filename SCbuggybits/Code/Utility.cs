@@ -33,7 +33,7 @@ namespace SCbuggybits.Code
                 }
             }
             catch (Exception ex)
-            {
+            {                
                 ExceptionHandler.LogException(ex);
             }
         }
