@@ -34,5 +34,12 @@ These demos and instructions are specifically for Sitecore 9.0.1.
 2. Lab2
 3. Lab3
 
+# Todos
+
+- High CPU/Locking Scenario
+- EventQueue related Scenario
+- Publishing related Scenario
+- What else?
+
 >Found any bug? Got suggestion/feedback/comment, Share it here!
 
