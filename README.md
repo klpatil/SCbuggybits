@@ -7,7 +7,7 @@ SCbuggybits is a series of tutorials for learning how to debug memory/CPU/crash 
 These demos and instructions are specifically for Sitecore 9.0.1.
 
 ##Prerequisites
-1. >= VS 2015
+1. VS 2015 or higher
 2. Sitecore 9.0.1
 3. TDS >= 5.7.0.15
 4. Your focused attention! [Disable all those mobile alerts! :-)]
