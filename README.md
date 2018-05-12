@@ -2,7 +2,7 @@
 SCbuggybits
 =============
 
-SCbuggybits is a series of tutorials for learning how to debug memory/CPU/crash bugs in your Sitecore applications. It is based on Tess Ferrandez's .NET Debugging Demos, taken as-is (with her permission), and upgraded with code and instructions that work on Sitecore 9.0.1.
+SCbuggybits is a series of tutorials for learning how to debug memory/CPU/crash bugs in your Sitecore applications. It is based on Tess Ferrandez's .NET Debugging Demos, taken an inspiration from it and upgraded with code and instructions that work on Sitecore 9.0.1.
 
 These demos and instructions are specifically for Sitecore 9.0.1.
 
