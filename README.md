@@ -36,6 +36,7 @@ These demos and instructions are specifically for Sitecore 9.0.1.
 
 # Todos
 
+- Write step by step instructions or record video for current labs.
 - High CPU/Locking Scenario
 - EventQueue related Scenario
 - Publishing related Scenario
