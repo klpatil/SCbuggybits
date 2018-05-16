@@ -106,7 +106,7 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="App_Config\Include\SCbuggybits\CEDemoCommand.config" />
-    <None Include="App_Config\Include\SCbuggybits\SiteDefinition.config" />
+    <Content Include="App_Config\Include\SCbuggybits\SiteDefinition.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <Content Include="Images\ladybug.jpg" />
     <Content Include="Views\Layouts\Main.cshtml" />
